@@ -1,0 +1,59 @@
+/* Added FLex Display for card container: 
+aligning them in the center */
+.card-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 0.25rem;
+  box-shadow: 0rem 0.125rem 1.5rem rgb(0 0 0 / 12%);
+  width: 24rem;
+}
+
+img {
+  border-bottom: 0.25rem solid #fc0;
+  border-radius: 0.25rem 0.25rem 0 0;
+  height: auto;
+  width: 100%;
+}
+/* Responsive Monkey Card */
+/* .monkey-card{
+    width: 49rem;
+} */
+
+@media screen and (min-width: 830px) {
+  img {
+    min-height: 15.5rem;
+  }
+  .monkey-card{
+    width: 49rem;
+  }
+}
+
+@media screen and (max-width: 830px) {
+  
+}
+
+@media screen and (min-width: 1230px) {
+  img {
+    min-height: 16.375rem;
+  } 
+  .monkey-card{
+    width: 24rem;
+  }
+}
+
+
+.card-content {
+  padding: 1rem;
+}
+
+.header,
+.subheader {
+  margin: 0;
+}
