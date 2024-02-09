@@ -1,5 +1,6 @@
-/* Added FLex Display for card container: 
-aligning them in the center */
+/* Added Flex Display for card container: 
+aligning them in the center and wraps for
+phone, tablet, and desktop */
 .card-container{
   display: flex;
   justify-content: center;
