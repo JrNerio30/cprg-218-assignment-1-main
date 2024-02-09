@@ -21,11 +21,8 @@ img {
   height: auto;
   width: 100%;
 }
-/* Responsive Monkey Card */
-/* .monkey-card{
-    width: 49rem;
-} */
 
+/* Added monkey card width for tablet devices. */
 @media screen and (min-width: 830px) {
   img {
     min-height: 15.5rem;
@@ -34,11 +31,8 @@ img {
     width: 49rem;
   }
 }
-
-@media screen and (max-width: 830px) {
-  
-}
-
+/* add monkey card media query for large devices
+reverts back to the original size! */
 @media screen and (min-width: 1230px) {
   img {
     min-height: 16.375rem;
