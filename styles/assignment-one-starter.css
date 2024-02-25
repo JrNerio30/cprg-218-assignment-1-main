@@ -1,14 +1,3 @@
-/* Added Flex Display for card container: 
-aligning them in the center and wraps for
-phone, tablet, and desktop */
-.card-container{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 1rem;
-}
-
 .card {
   background-color: #fff;
   border-radius: 0.25rem;
@@ -23,26 +12,17 @@ img {
   width: 100%;
 }
 
-/* Added monkey card width for tablet devices. */
-@media screen and (min-width: 830px) {
+@media screen and (min-width: 768px) {
   img {
     min-height: 15.5rem;
   }
-  .monkey-card{
-    width: 49rem;
-  }
-}
-/* add monkey card media query for large devices
-reverts back to the original size! */
-@media screen and (min-width: 1230px) {
-  img {
-    min-height: 16.375rem;
-  } 
-  .monkey-card{
-    width: 24rem;
-  }
 }
 
+@media screen and (min-width: 1200px) {
+  img {
+    min-height: 16.375rem;
+  }
+}
 
 .card-content {
   padding: 1rem;
