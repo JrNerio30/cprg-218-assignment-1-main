@@ -1,21 +1,24 @@
 .header-container{
+  /* Box Shadow */
   -webkit-box-shadow: -1px 9px 24px -4px rgba(0, 0, 0, 1);
   -moz-box-shadow: -1px 9px 24px -4px rgba(0, 0, 0, 1);
   box-shadow: -1px 9px 24px -4px rgba(0, 0, 0, 1);
+  /* Cool Grid Dotted Background */
   --dot-bg: black;
   --dot-color: white;
   --dot-size: 1px;
   --dot-space: 22px;
 	background:
-		linear-gradient(90deg, var(--dot-bg) calc(var(--dot-space) - var(--dot-size)), transparent 1%) center / var(--dot-space) var(--dot-space),
-		linear-gradient(var(--dot-bg) calc(var(--dot-space) - var(--dot-size)), transparent 1%) center / var(--dot-space) var(--dot-space),
-		var(--dot-color);
+  linear-gradient(90deg, var(--dot-bg) calc(var(--dot-space) - var(--dot-size)), transparent 1%) center / var(--dot-space) var(--dot-space),
+	linear-gradient(var(--dot-bg) calc(var(--dot-space) - var(--dot-size)), transparent 1%) center / var(--dot-space) var(--dot-space),
+	var(--dot-color);
 }
-
+/* Colored headings 1 and 2 to white */
 .header-container h1,h2{
   color: white;
 }
 
+/* Iframe Youtube Video Container */
 .video-container{
   display:flex;
   justify-content:center;
@@ -24,20 +27,38 @@
   padding:48px 15px
 }
 
+/* Responsive iframe */
 iframe{
-  margin-top:6rem;
-  border-radius:5px;
+  margin-top: 6rem;
+  border-radius: 5px;
   flex:1
 }
 
+/* Tablets */
 @media screen and (min-width:768px){
   iframe{
-    height:35rem;max-width:97%
+    height:35rem;
+    max-width: 97%;
+  }
+}
+/* Desktops */
+@media screen and (min-width:1200px){
+  iframe{
+    height:42rem;
+    max-width: 80%;
   }
 }
 
-@media screen and (min-width:1500px){
-  iframe{
-    height:40rem;max-width:80%
-  }
+/* footer */
+footer{
+  height: 15vh;
+  /* Cool Grid Dotted Background */
+    --dot-bg: black;
+  --dot-color: white;
+  --dot-size: 1px;
+  --dot-space: 22px;
+	background:
+  linear-gradient(90deg, var(--dot-bg) calc(var(--dot-space) - var(--dot-size)), transparent 1%) center / var(--dot-space) var(--dot-space),
+	linear-gradient(var(--dot-bg) calc(var(--dot-space) - var(--dot-size)), transparent 1%) center / var(--dot-space) var(--dot-space),
+	var(--dot-color);
 }
