@@ -1,23 +1,25 @@
 /* Card Container */
-
+/* Solar System List of Cards */
 .card{
   flex: 1;
   width: 100%;
+  margin-bottom: 1rem;
 }
 
+/* Phone */
 @media screen and (min-width: 768px) {
+  /* Smooth Responsiveness */
   ul{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
   }
-
   .card{
     flex-basis: calc(50% - 1rem);
     margin: 0.5rem;
   }
 }
-
+/* Desktop */
 @media screen and (min-width: 1200px) {
   ul{
     display: flex;
