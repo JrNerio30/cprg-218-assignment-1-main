@@ -1,0 +1,10 @@
+.video-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+iframe{
+  margin-top: 6rem;
+}
